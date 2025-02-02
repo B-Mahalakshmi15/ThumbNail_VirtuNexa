@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#section1">Gallery</a></li>
+            <li><a href="#section2">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Dynamic Thumbnail Carousel</h1>
+        <p>Experience seamless navigation and interactivity</p>
+    </header>
+
+    <section id="section1" class="content-section">
+        <h2>Gallery</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="https://getwallpapers.com/wallpaper/full/7/7/c/257695.jpg" class="thumbnail active" onclick="showImage(0)">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.VSvioNnNuID7mfA6Y0IbeQHaE7&pid=Api&P=0&h=180" class="thumbnail" onclick="showImage(1)">
+                <img src="https://wallup.net/wp-content/uploads/2019/10/336103-sky-clouds-scenery-sunset-beautiful-nature-landscape.jpg" class="thumbnail" onclick="showImage(2)">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.E-ozCzhmN_a81qeR_avEwAHaE7&pid=Api&P=0&h=180" class="thumbnail" onclick="showImage(3)">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="display-area">
+            <img id="main-image" src="https://source.unsplash.com/300x300/?mountains">
+        </div>
+    </section>
+
+    <section id="section2" class="content-section">
+        <h2>About This Project</h2>
+        <p>This interactive carousel dynamically changes images when thumbnails are clicked. It is designed with a modern aesthetic and smooth transitions.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
